@@ -1,0 +1,15 @@
+name: b8g-micro-moe CI
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Train & Verify 53.7 KB INT8 5-Head Router
+        run: |
+          node src/train-router.mts
+          node --test src/algebra-router.test.mts
+          node src/cli.mts "deploy linux server with telemetry"
