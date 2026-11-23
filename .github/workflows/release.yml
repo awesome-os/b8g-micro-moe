@@ -24,10 +24,10 @@ jobs:
         run: |
           node src/train-router.mts
           node --test src/algebra-router.test.mts
-          sha256sum dist/algebra-router.b8p PAPER.md > dist/SHA256SUMS.txt
+          sha256sum src/dist/algebra-router.b8p PAPER.md > src/dist/SHA256SUMS.txt
       - name: Publish GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.event.inputs.tag || github.ref_name }}
         run: |
-          gh release create "$TAG" dist/algebra-router.b8p dist/SHA256SUMS.txt PAPER.md --title "b8g-micro-moe $TAG (53.7 KB INT8 .b8p)" --notes "Trained and verified automatically on GitHub Actions CPU runner." || gh release upload "$TAG" dist/algebra-router.b8p dist/SHA256SUMS.txt PAPER.md --clobber
+          gh release create "$TAG" src/dist/algebra-router.b8p src/dist/SHA256SUMS.txt PAPER.md --title "b8g-micro-moe $TAG (53.7 KB INT8 .b8p)" --notes "Trained and verified automatically on GitHub Actions CPU runner." || gh release upload "$TAG" src/dist/algebra-router.b8p src/dist/SHA256SUMS.txt PAPER.md --clobber
