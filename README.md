@@ -22,3 +22,13 @@ node --test src/algebra-router.test.mts
 
 ## License
 MIT
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Download latest release assets (all platforms)
+gh release download -R awesome-os/b8g-micro-moe --dir ./b8g-micro-moe-release
+
+# Or clone source directly (all platforms)
+git clone https://github.com/awesome-os/b8g-micro-moe.git && cd b8g-micro-moe
+```
