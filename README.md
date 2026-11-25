@@ -26,9 +26,9 @@ MIT
 ## Quick Install & Run (Windows / Linux / macOS)
 
 ```sh
-# Download latest release assets (all platforms)
-gh release download -R awesome-os/b8g-micro-moe --dir ./b8g-micro-moe-release
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/b8g-micro-moe@main
 
-# Or clone source directly (all platforms)
-git clone https://github.com/awesome-os/b8g-micro-moe.git && cd b8g-micro-moe
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://cpp/b8g-micro-moe?from=repository://github.com/awesome-os/b8g-micro-moe@main"
 ```
