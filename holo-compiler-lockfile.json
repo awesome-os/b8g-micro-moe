@@ -1,0 +1,52 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/b8g-micro-moe",
+  "targets": [
+    "win64",
+    "linux-x64",
+    "linux-arm64",
+    "macos-arm64",
+    "wasm32-wasi"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/b8g-micro-moe/algebra-router.b8p",
+      "kind": "b8p",
+      "version": "v0.3.1",
+      "target": "any",
+      "sha512": "d2fac6359caf2829b1a2119fd8cab930c84376f05432c4e62d12b524857411673625f4c21e234bd868b94e7a276917fe4b0df90af1a5e6756706686811c084b2",
+      "size": 55028,
+      "executable": false,
+      "blob": "v11/files/d2/d2fac6359caf2829b1a2119fd8cab930c84376f05432c4e62d12b524857411673625f4c21e234bd868b94e7a276917fe4b0df90af1a5e6756706686811c084b2",
+      "url": "https://github.com/awesome-os/b8g-micro-moe/releases/download/v0.3.1/algebra-router.b8p",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/b8g-micro-moe/PAPER.md",
+      "kind": "object",
+      "version": "v0.3.1",
+      "target": "any",
+      "sha512": "166b693f1324d840cbb552609b5d79c398f4dc3a68798c545e61df4d55099502d49336269a429bdbf15de496fe78636549c30937e0b6b56eb2d6edc9c944ad2f",
+      "size": 14604,
+      "executable": false,
+      "blob": "v11/files/16/166b693f1324d840cbb552609b5d79c398f4dc3a68798c545e61df4d55099502d49336269a429bdbf15de496fe78636549c30937e0b6b56eb2d6edc9c944ad2f",
+      "url": "https://github.com/awesome-os/b8g-micro-moe/releases/download/v0.3.1/PAPER.md",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/b8g-micro-moe/SHA256SUMS.txt",
+      "kind": "object",
+      "version": "v0.3.1",
+      "target": "any",
+      "sha512": "80035254f92936df2f0998320b3499ab82fdf2ade8748fc849280a6ca011d84c10db4598b4266fbc66dc35e973fe020d529bd0a58912647af97bcb4eb4a32d19",
+      "size": 169,
+      "executable": false,
+      "blob": "v11/files/80/80035254f92936df2f0998320b3499ab82fdf2ade8748fc849280a6ca011d84c10db4598b4266fbc66dc35e973fe020d529bd0a58912647af97bcb4eb4a32d19",
+      "url": "https://github.com/awesome-os/b8g-micro-moe/releases/download/v0.3.1/SHA256SUMS.txt",
+      "dependencies": []
+    }
+  ]
+}
