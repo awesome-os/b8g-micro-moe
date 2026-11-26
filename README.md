@@ -1,3 +1,6 @@
+> [!NOTE]
+> Consolidated into https://github.com/awesome-os/agent-platform
+
 # b8g-micro-moe
 
 Sub-millisecond, **53.7 KB INT8** offline multi-head AI classifiers and routers — zero Python, zero PyTorch, zero GPU.
